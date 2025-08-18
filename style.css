@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    max-width:1140px ;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+
+}
+header{
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 60px;
+        }
+
+        .icons{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            transition:0.3s;
+            cursor: pointer;
+            span{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 3px;
+                background-color: black;
+                margin-bottom: 11px;
+
+            }
+            
+            #first{
+                height: 1.5px;
+                
+            }
+            #second{
+                position: absolute;
+                right: 0;
+                top: 6px;
+                height: 2px;
+                width: 50%;
+                transition: 0.5s;
+                -webkit-transition: 0.5s;
+                -moz-transition: 0.5s;
+                -ms-transition: 0.5s;
+                -o-transition: 0.5s;
+            }
+            .menu{
+                height: 200px;
+                width: 200px;
+                background-color: #f6f6f6;
+                position: absolute;
+                position: relative;
+                right: 175px;
+                top: 16px;
+                display: none;
+                border-radius:10px;
+              
+                .content{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    a{
+                        display:flex ;
+                        align-items: center;
+                        width: 100%;
+                        padding-left: 1rem;
+                        transition: 0.5s;
+                        &:hover{
+                            padding-left: 2rem;
+                        }
+                    }
+                    hr{
+                        width: 90%;
+                        border-top: .5px solid #dddddd;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+
+                i{
+                    position: absolute;
+                    color:#f6f6f6;
+                    top: -9px;
+                    right: -6px;
+                }
+
+            }
+            &:hover{
+                #second{
+                width: 100%;
+                }
+                .menu{
+                    display: block;
+                }
+            }
+
+        }
+    }
+    
+}
+
+.hero{
+    height: 90vh;
+    width: 100%;
+    background-image: url(./assets/landing.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h1{
+        color: #10cab7;
+        font-size: clamp(40px , 8vw , 50px);
+        text-align: center;
+        
+    }
+    P{
+        width: 300px;
+        max-width: 90%;
+        font-size:19px ;
+        line-height: 2rem;
+        text-align: center;
+        
+
+    }
+}
+
+.brief{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem 0rem ;
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 2rem;
+        .box{
+            width:20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+}
