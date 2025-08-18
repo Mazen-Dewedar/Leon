@@ -5,12 +5,16 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .container{
     width: 100%;
     max-width:1140px ;
 }
 a{
     text-decoration: none;
+    
 }
 
 body {
@@ -89,6 +93,10 @@ header{
                         transition: 0.5s;
                         &:hover{
                             padding-left: 2rem;
+                        }
+
+                        &:visited{
+                            color:black ;
                         }
                     }
                     hr{
@@ -321,6 +329,7 @@ header{
                 width: calc(100%-780px);
                 position: relative;
                 display: flex;
+                margin-left: 4rem;
                 @media screen and (max-width:1197px) {
                     display: none;
                 }                
