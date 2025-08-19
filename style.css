@@ -146,6 +146,7 @@ header{
         color: #10cab7;
         font-size: clamp(40px , 8vw , 50px);
         text-align: center;
+        animation-iteration-count: infinite;
         
     }
     P{
