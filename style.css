@@ -358,6 +358,7 @@ header{
     padding: 4rem  0 ;
     background-color:#f6f6f6 ;
     width: 100%;
+    /* padding-bottom: 2rem; */
     .container{
         display: flex;
         flex-direction: column;
@@ -379,6 +380,7 @@ header{
             width: 100%;
             text-align: center;
             margin-top: -2rem;
+            z-index: 1;
             @media screen and (max-width:767px) {
                 margin-top: -1.1rem;
             }
@@ -392,7 +394,7 @@ header{
             justify-content:center;
             margin-top: 5rem;
             grid-gap: 30px;
-
+            animation-duration: 2s;
             .card{
                 background-color: white;
                 width:360px;
