@@ -433,3 +433,145 @@ header{
         }
     }
 }
+
+.About{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h1{
+            font-size: 100px;
+            color: #ebeced;
+            z-index: 0;
+            @media screen and (max-width:767px) {
+            font-size: 60px;
+                
+            }
+        }
+        p{
+            color: #797979;
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+            margin-top: -2rem;
+            z-index: 1;
+            @media screen and (max-width:767px) {
+                margin-top: -1.1rem;
+            }
+        }  
+        
+        .second{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top:3rem ;
+            gap: 4rem;
+            @media screen and (max-width:992px) {
+                flex-direction: column;
+                align-items: center;
+                gap: 7rem;
+            }
+            .left{
+                width: 440px;
+                margin-top: 4rem;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                position: relative;
+                .img{
+                    height: 375px;
+                    max-width: 80%;
+                    width: 250px;
+                    z-index: 1;
+                    position: relative;
+                    left: 19px;
+                @media screen and (max-width:992px) {
+                    left:calc(50% - 125px);
+                }
+                }
+                .decor1{
+                    position: absolute;
+                    height: 450px;
+                    width: 100px;
+                    background-color: #ebeced;
+                    left: 0;
+                    @media screen and (max-width:992px) {
+                        display: none;
+                    }
+                }
+                .decor2{
+                    position: absolute;
+                    position: relative;
+                    z-index: 0;
+                    top: -35px;
+                    right: 31px;
+                    width: 200px;
+                    height: 380px;
+                    background-color:#10cab7 ;
+
+                    @media screen and (max-width:992px) {
+                        display: none;
+                    }
+                    .white{
+                        height: 300px;
+                        width: 120px;
+                        position: absolute;
+                        background-color: white;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            
+            }
+
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap:3rem;
+                width: 640px;
+                max-width: 90%;
+                @media screen and (min-width:992px) and (max-width:1200px) {
+                    width: 460px;
+                }
+                @media screen and (max-width:992px) {
+                    align-items: center;
+                  }
+                #first{
+                   font-size: 16px;
+                   font-weight: bold; 
+                   text-align: left;
+                   color: black;
+                   line-height: 2rem;
+                @media screen and (max-width:992px) {
+                    text-align: center;
+                }
+                }
+                #second{
+                    font-size: 16px;
+                    color: #777777;
+                    max-width: 90%;
+                   text-align: left;
+                   line-height: 2rem;
+                    padding-top: 2rem;
+                @media screen and (max-width:992px) {
+                    text-align: center;
+                }
+                }
+                hr{
+                    border-top: #10cab7 2px solid;
+                    width:300px ;
+                }
+            }
+        }
+        
+    }
+}
